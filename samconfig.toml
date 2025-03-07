@@ -1,0 +1,14 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "final-todo-project"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-japm0ytgb3is"
+s3_prefix = "final-todo-project"
+region = "us-west-2"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Table=\"Todos\" Region=\"us-west-2\""
+image_repositories = []
+resolve_s3 = true
+confirm_changeset = true
+disable_rollback = true
